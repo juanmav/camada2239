@@ -1,0 +1,20 @@
+{
+  "name": "clase2",
+  "version": "0.0.1",
+  "description": "clase 2 seguimos nodejs y vamos a ver callbacks y promises.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanmav/camada2239/clase2"
+  },
+  "author": "camada2239",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.82.0",
+    "request-promise": "^4.2.1"
+  }
+}
