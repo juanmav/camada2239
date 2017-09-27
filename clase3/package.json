@@ -1,0 +1,23 @@
+{
+  "name": "clase3",
+  "version": "1.0.0",
+  "description": "clase 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "nodejs",
+    "promises",
+    "arrays",
+    "express"
+  ],
+  "author": "camada2239",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.82.0",
+    "request-promise": "^4.2.2"
+  }
+}
