@@ -99,6 +99,8 @@ Esto es la documentacion del twitter clon api.
 
 #### Borrar uno (./users/:id)[DELETE]
 
+Hace un borrado fisico del usuario y **no** logico.
+
 + request 
     + params
        + id - id del usuario

@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Twitter Clon de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "mongoose",
+    "express",
+    "javascript"
+  ],
+  "author": "camada2239",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^4.12.0"
+  }
+}
