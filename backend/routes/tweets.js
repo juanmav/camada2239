@@ -30,7 +30,7 @@ router.get('/:tweetId', function (req, res) {
 
 router.post('/', function (req, res) {
     let data = req.body;
-    let userId = '59dd5a6c2bea2b236bd78e62'; // Este dato sale del login.
+    let userId = req.user._id;
 
     data.author = userId;
     let tweet = new Tweet(data);
@@ -44,7 +44,7 @@ router.post('/', function (req, res) {
 router.put('/:tweetId', function (req, res) {
     let data = req.body;
     let tweetId = req.params.tweetId;
-    let userId = '59dd5a6c2bea2b236bd78e62'; // Este dato sale del login.
+    let userId = req.user._id;
 
     Tweet
         .findById(tweetId)
@@ -66,7 +66,7 @@ router.put('/:tweetId', function (req, res) {
 
 router.delete('/:tweetId', function (req, res) {
     let tweetId = req.params.tweetId;
-    let userId = '59dd5a6c2bea2b236bd78e62'; // Este dato sale del login.
+    let userId = req.user._id;
 
     Tweet
         .findById({ _id : tweetId})
@@ -83,9 +83,6 @@ router.delete('/:tweetId', function (req, res) {
                 res.status(404).json({ message: 'no existe el tweet que queres borrar'})
             }
         })
-
-
-
 });
 
 module.exports = router;
