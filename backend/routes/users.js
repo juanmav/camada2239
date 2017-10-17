@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const usersTweetsRouter = require('./userstweets');
+
+router.use('/:userId/tweets', usersTweetsRouter);
 
 router.get('/', function (req, res) {
     User
