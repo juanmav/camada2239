@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
 
 router.post('/', function (req, res) {
     let tweetId = req.params.tweetId;
-    let userId = '59dd5a6c2bea2b236bd78e62'; // Este dato sale del login.
+    let userId = req.user._id;
     let data = req.body;
 
     Tweet

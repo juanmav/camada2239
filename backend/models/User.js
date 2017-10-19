@@ -4,7 +4,7 @@ let userSchema = mongoose.Schema({
     name: { type: String, required: true },
     lastname: { type: String, required: true },
     username: { type: String, unique: true },
-    mail: { type: String, unique: true },
+    mail: { type: String, required: true },
     password: String,
     isAdmin: Boolean
 });

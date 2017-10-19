@@ -16,12 +16,13 @@ const usersRouter = require('./routes/users');
 const tweetsRouter = require('./routes/tweets');
 const loginRouter = require('./routes/login');
 const authValidator = require('./routes/helpers/authValidator');
+const uploadRouter = require('./routes/upload');
 
 app.use('/', descriptorRouter);
 app.use('/users', authValidator, usersRouter);
 app.use('/tweets', authValidator, tweetsRouter);
 app.use('/login', loginRouter);
-
+app.use('/upload', /*authValidator,*/uploadRouter);
 
 app.listen(4000);
 console.log('Express funcionando en el puerto 4000');
